@@ -122,8 +122,22 @@
                     'status',
                 );
 
+            // Helper to extract the repository name from URL
+            function extractRepoName(
+                url,
+            ) {
+                const match = url.match(
+                    /github\.com\/([^\/]+)\/([^\/]+)(\/|$)/,
+                );
+                if (match) {
+                    return `${match[1]}-${match[2]}`;
+                }
+                return 'repository';
+            }
+
             async function downloadFile(
                 url,
+                repoName,
             ) {
                 try {
                     status.style.color =
@@ -154,8 +168,7 @@
 
                     a.href =
                         downloadURL;
-                    a.download =
-                        'repository.zip';
+                    a.download = `${repoName}.zip`; // Dynamically name the file based on repo name
                     a.click();
 
                     window.URL.revokeObjectURL(
@@ -190,10 +203,15 @@
                         return;
                     }
 
+                    const repoName =
+                        extractRepoName(
+                            url,
+                        );
                     downloadFile(
                         `https://download-directory.github.io/?url=${encodeURIComponent(
                             url,
                         )}`,
+                        repoName,
                     );
                 },
             );
