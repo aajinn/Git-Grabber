@@ -4,10 +4,10 @@
 <head>
         <meta charset="utf-8" />
         <title>Git-grabber</title>
-        <link rel="stylesheet" href="css/download-directory.github.io-index.05e78c6e.css" />
-        <script src="js/7085--index.9032277f.js" defer></script>
+        <link rel="stylesheet" href="css/index.css" />
+        <script src="js/index.js" defer></script>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link rel="canonical" href="https://download-directory.github.io/" />
+        
         <link rel="preload"
                 href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Roboto+Slab:wght@300&amp;display=swap"
                 as="style" />
@@ -15,17 +15,18 @@
                 href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Roboto+Slab:wght@300&amp;display=swap"
                 media="print" onload="this.media='all'" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta name="google-site-verification" content="0AMR3lQZu5bzGS6wcqw1b9udtj7QCqRuDB-vQ52zylU" />
+     
         <link rel="icon" href="favicons/1749--favicon.5654fcee.ico" />
 </head>
 
 <body>
         <main class="text-align-center">
-                <h1 style="text-align: center">-Git-Grabber-</h1>
+               <a href="/"><h1 style="text-align: center">-Git-Grabber-</h1></a> 
                 <form>
                         <input id="url" autofocus name="url" type="url" size="38"
                                 placeholder="Paste GitHub.com folder URL + press Enter" />
                 </form>
+                <pre class="status">Loading</pre>
                 <footer class="text-align-center">
                         <label for="info-toggle">info</label>
                         +
@@ -53,13 +54,7 @@
                                         download of all the files in a
                                         directory, in a single click,
                                         after you entered your token.</p>
-                                <p>The download starts
-                                        automatically when you visit
-                                        pass the link to the GitHub
-                                        directory as
-                                        <code>url</code>
-                                        parameter, like:
-                                </p>
+                              
                                 <p><a href="build.html"><strong>download-directory.github.io</strong><code>?url=https://github.com/mrdoob/three.js/tree/dev/build</code></a>
                                 </p>
                                 <p>You can also specify download
@@ -72,7 +67,97 @@
                                         <strong>three-js-build.zip</strong>.</a>
                         </div>
                 </footer>
-                <pre class="status">Loading</pre>
+                <style>
+   
+ 
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #4CAF50;
+    }
+    p {
+      margin-bottom: 1em;
+      text-align: left;
+    }
+    a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    code {
+      background: #000000;
+      padding: 0.2em 0.4em;
+      border-radius: 3px;
+    }
+    .example-link {
+      background: #4CAF50;
+      color: white;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 1em 0;
+    }
+    .example-link:hover {
+      background: #45a049;
+    }
+                </style>
+                <main>
+                        
+                        <h2>Simplify Downloads with the GitHub Directory Downloader</h2>
+                        <p>If you’ve ever worked with GitHub, you’ve probably encountered this frustration: GitHub doesn’t let you download a single folder from a repository. This limitation can be a real pain when all you need is a specific directory or a few files from a massive repository. Enter the <strong>GitHub Directory Downloader</strong>, a simple yet powerful tool to save you time and effort.</p>
+                    
+                        <h2>The Problem with GitHub Folder Downloads</h2>
+                        <p>Imagine this: you’re exploring a public repository and find a well-structured folder containing all the files you need for your project. You click around, hoping for a “Download Folder” button—but it doesn’t exist. GitHub only allows you to clone the entire repository, which might include unnecessary files and folders, especially for larger projects.</p>
+                    
+                        <p>For developers, designers, and researchers, this limitation is more than inconvenient. Downloading the entire repository often means wasting time, bandwidth, and storage. If you’re working with limited resources or just want a specific piece of a project, cloning isn’t practical.</p>
+                    
+                        <h2>The Solution: GitHub Directory Downloader</h2>
+                        <p>The <strong>GitHub Directory Downloader</strong> solves this problem by enabling you to download specific directories directly. With this tool, you can bypass GitHub’s restriction and grab exactly what you need—no extra baggage.</p>
+                    
+                        <h3>How It Works</h3>
+                        <ul>
+                          <li><strong>Paste the URL</strong>: Copy the GitHub folder’s URL and paste it into the input field.</li>
+                          <li><strong>Enter Your Token (Optional)</strong>: If the folder belongs to a private repository or you want to avoid GitHub’s API rate limits, you can add your personal GitHub token. This ensures seamless access to the content.</li>
+                          <li><strong>Download in a Single Click</strong>: Click the download button, and the tool packages the contents of the folder into a <code>.zip</code> file for you. No cloning. No unnecessary files.</li>
+                        </ul>
+                    
+                        <h3>Key Features</h3>
+                        <ul>
+                          <li><strong>Folder-Specific Downloads:</strong> Grab only the files you need, saving bandwidth and storage.</li>
+                          <li><strong>Private Repo Access:</strong> Use your GitHub token to download from private repositories securely.</li>
+                          <li><strong>Automatic Zipping:</strong> All files in the directory are compressed into a ZIP archive, ready for use.</li>
+                          <li><strong>User-Friendly Interface:</strong> Clean, responsive design ensures the tool is easy to use on any device.</li>
+                        </ul>
+                    
+                        <h3>A Quick Example</h3>
+                        <p>Let’s say you need a directory of pre-built shaders from the <a href="https://github.com/mrdoob/three.js" target="_blank">Three.js GitHub repository</a>. Instead of cloning the entire project (which is hundreds of megabytes), you can:</p>
+                        <ol>
+                          <li>Copy the URL of the folder you need, e.g., <code>https://github.com/mrdoob/three.js/tree/dev/build</code>.</li>
+                          <li>Paste the URL into the tool and hit download.</li>
+                          <li>Instantly get a ZIP file containing only the files you need.</li>
+                        </ol>
+                       
+                      </main>
+
+                      <section>
+                        <h2>Credits</h2>
+                        <p>
+                          This website is built upon the foundation of the original 
+                          <a href="https://download-directory.github.io" target="_blank">download-directory.github.io</a> 
+                          project, which was developed by <strong>Federico Brigante</strong>. You can find more about Federico on 
+                          <a href="https://x.com/bfred_it" target="_blank">@bfred_it</a>.
+                        </p>
+                        <p>
+                          The current version includes significant improvements in design and styling to enhance user experience while maintaining the functionality of the original project. A huge thanks to Federico for the amazing work that made this improved version possible.
+                        </p>
+                      </section>
+                      
         </main>
         
 </body>
