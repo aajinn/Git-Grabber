@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8" />
+        <title>Git-grabber</title>
+        <link rel="stylesheet" href="css/download-directory.github.io-index.05e78c6e.css" />
+        <script src="js/7085--index.9032277f.js" defer></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="canonical" href="https://download-directory.github.io/" />
+        <link rel="preload"
+                href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Roboto+Slab:wght@300&amp;display=swap"
+                as="style" />
+        <link rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Roboto+Slab:wght@300&amp;display=swap"
+                media="print" onload="this.media='all'" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="google-site-verification" content="0AMR3lQZu5bzGS6wcqw1b9udtj7QCqRuDB-vQ52zylU" />
+        <link rel="icon" href="favicons/1749--favicon.5654fcee.ico" />
+</head>
+
+<body>
+        <main class="text-align-center">
+                <h1 style="text-align: center">-Git-Grabber-</h1>
+                <form>
+                        <input id="url" autofocus name="url" type="url" size="38"
+                                placeholder="Paste GitHub.com folder URL + press Enter" />
+                </form>
+                <footer class="text-align-center">
+                        <label for="info-toggle">info</label>
+                        +
+                        <input type="checkbox" id="token-toggle" />
+                        <span>
+                                Enter
+                                <a href="https://github.com/settings/tokens/new?description=Download%20GitHub%20directory&amp;scopes=repo"
+                                        target="_blank">
+                                        your GitHub token</a>:<br />
+                                <input id="token" placeholder="Token" autocomplete="off" size="45"
+                                        pattern="[\da-f]{40}|ghp_.+|gho_.+|github_pat_.+" required /><br />
+                                Brought to you by the developers of
+                                <a href="https://github.com/sindresorhus/refined-github/pull/951#issuecomment-358301513"
+                                        target="_blank">Refined GitHub</a>
+                        </span>
+                        <label for="token-toggle">token</label>
+                        <input type="checkbox" id="info-toggle" />
+                        <div class="info">
+                                <p>GitHub doesn&rsquo;t let you
+                                        download a single folder from a
+                                        repo, which might be necessary
+                                        when you just need a few files
+                                        from a large repository.</p>
+                                <p>This tool will handle the
+                                        download of all the files in a
+                                        directory, in a single click,
+                                        after you entered your token.</p>
+                                <p>The download starts
+                                        automatically when you visit
+                                        pass the link to the GitHub
+                                        directory as
+                                        <code>url</code>
+                                        parameter, like:
+                                </p>
+                                <p><a href="build.html"><strong>download-directory.github.io</strong><code>?url=https://github.com/mrdoob/three.js/tree/dev/build</code></a>
+                                </p>
+                                <p>You can also specify download
+                                        filename by adding
+                                        <code>filename</code>
+                                        parameter, like:
+                                </p>
+                                <p><a href="build&amp;filename=three-js-build.html"><strong>download-directory.github.io</strong><code>?url=https://github.com/mrdoob/three.js/tree/dev/build&amp;filename=three-js-build</code></a>
+                                        to save the file as
+                                        <strong>three-js-build.zip</strong>.</a>
+                        </div>
+                </footer>
+                <pre class="status">Loading</pre>
+        </main>
+        
+</body>
+
+</html>

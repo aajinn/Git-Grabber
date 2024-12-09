@@ -1,0 +1,122 @@
+:root {
+    --primary-color: #4caf50;
+    --secondary-color: #2e7d32;
+    --text-color: #ffffff;
+    --background-color: #1b1b1b;
+    --border-radius: 8px;
+    --spacing: 16px;
+    --font-size: 16px;
+    --line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background: var(--background-color);
+    min-width: 320px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing);
+}
+
+header {
+    text-align: center;
+    margin-bottom: var(--spacing);
+}
+
+header h1 {
+    font-size: 2em;
+    color: var(--primary-color);
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    background: var(--secondary-color);
+    padding: var(--spacing);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+main label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+main input[type='url'],
+main button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: var(--spacing);
+    font-size: 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+main input[type='url'] {
+    background: #ffffff11;
+    color: var(--text-color);
+    border: 1px solid #ffffff33;
+}
+
+main input[type='url']::placeholder {
+    color: #ffffff77;
+}
+
+main input[type='url']:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+main button {
+    background: var(--primary-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+main button:hover {
+    background: var(--secondary-color);
+}
+
+footer {
+    margin-top: var(--spacing);
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: var(--spacing) 8px;
+    }
+
+    main {
+        padding: var(--spacing) 12px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+}
