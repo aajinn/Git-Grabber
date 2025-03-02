@@ -1,22 +1,24 @@
+# 🖥️ TypeScript (TSX) Quick Guide 🚀  
+
+## 🔰 Basic Component  
 ```tsx
-// 🖥️ TypeScript (TSX) Quick Guide 🚀
-
-import React, { useState, useEffect } from "react";
-
-// 🎨 Basic Component
 const HelloWorld: React.FC = () => {
   return <h1>Hello, World! 🌍</h1>;
 };
+```  
 
-// 🎭 Props in Components
+## 🎭 Props in Components  
+```tsx
 interface GreetingProps {
   name: string;
 }
 const Greeting: React.FC<GreetingProps> = ({ name }) => {
   return <h2>Hello, {name}! 👋</h2>;
 };
+```  
 
-// 🔀 State Management
+## 🔀 State Management  
+```tsx
 const Counter: React.FC = () => {
   const [count, setCount] = useState<number>(0);
 
@@ -28,8 +30,10 @@ const Counter: React.FC = () => {
     </div>
   );
 };
+```  
 
-// ⏳ useEffect Hook
+## ⏳ useEffect Hook  
+```tsx
 const Timer: React.FC = () => {
   const [seconds, setSeconds] = useState<number>(0);
 
@@ -43,8 +47,10 @@ const Timer: React.FC = () => {
 
   return <p>⏳ Timer: {seconds} seconds</p>;
 };
+```  
 
-// 🎯 Event Handling
+## 🎯 Event Handling  
+```tsx
 const ClickButton: React.FC = () => {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     alert("Button Clicked! 🎉");
@@ -52,13 +58,17 @@ const ClickButton: React.FC = () => {
 
   return <button onClick={handleClick}>Click Me! 🖱️</button>;
 };
+```  
 
-// 🔍 Conditional Rendering
+## 🔍 Conditional Rendering  
+```tsx
 const StatusMessage: React.FC<{ isOnline: boolean }> = ({ isOnline }) => {
   return <p>{isOnline ? "🟢 Online" : "🔴 Offline"}</p>;
 };
+```  
 
-// 🔗 Mapping Over Arrays
+## 🔗 Mapping Over Arrays  
+```tsx
 const List: React.FC<{ items: string[] }> = ({ items }) => {
   return (
     <ul>
@@ -68,8 +78,10 @@ const List: React.FC<{ items: string[] }> = ({ items }) => {
     </ul>
   );
 };
+```  
 
-// 🌐 Fetch API (useEffect Example)
+## 🌐 Fetch API (useEffect Example)  
+```tsx
 const FetchData: React.FC = () => {
   const [data, setData] = useState<string[]>([]);
 
@@ -81,8 +93,10 @@ const FetchData: React.FC = () => {
 
   return <List items={data} />;
 };
+```  
 
-// 🏗️ Context API
+## 🏗️ Context API  
+```tsx
 interface ThemeContextType {
   theme: string;
   toggleTheme: () => void;
@@ -103,8 +117,10 @@ const ThemeSwitcher: React.FC = () => {
 
   return <button onClick={context.toggleTheme}>Toggle Theme 🎨</button>;
 };
+```  
 
-// 🎉 Combining Components
+## 🎉 Combining Components  
+```tsx
 const App: React.FC = () => {
   return (
     <ThemeProvider>
